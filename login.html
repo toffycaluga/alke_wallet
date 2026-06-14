@@ -16,10 +16,60 @@
   >
 
   <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/loader.css">
 </head>
 
 <body>
+      <main class="wallet-container">
+    <section class="card wallet-card shadow">
+      <div class="card-body p-4 p-md-5">
 
+        <h2 class="wallet-title text-center mb-4">
+          Inicio de sesión
+        </h2>
+        <div id="message-container"></div>
+        <form id="login-form" action="menu.html">
+
+          <div class="mb-3">
+            <label for="email" class="form-label">
+              Email
+            </label>
+
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="correo@ejemplo.com"
+              required
+            >
+          </div>
+
+          <div class="mb-4">
+            <label for="password" class="form-label">
+              Contraseña
+            </label>
+
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              placeholder="Ingresa tu contraseña"
+              required
+            >
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary w-100 wallet-button"
+          >
+            Iniciar sesión
+          </button>
+
+        </form>
+
+      </div>
+    </section>
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script

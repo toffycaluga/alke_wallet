@@ -1,0 +1,45 @@
+body {
+  min-height: 100vh;
+  background-color: #f1f5f9;
+}
+
+.wallet-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.wallet-card {
+  width: 100%;
+  max-width: 500px;
+  border: none;
+  border-radius: 20px;
+}
+
+.wallet-title {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #0d6efd, #6610f2);
+  color: white;
+  border-radius: 16px;
+}
+
+.wallet-button {
+  padding: 12px;
+  font-weight: bold;
+}
+
+.transaction-positive {
+  color: #198754;
+  font-weight: bold;
+}
+
+.transaction-negative {
+  color: #dc3545;
+  font-weight: bold;
+}

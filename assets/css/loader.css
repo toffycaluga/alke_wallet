@@ -1,0 +1,48 @@
+body {
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+body.page-ready {
+  opacity: 1;
+}
+
+.page-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(241, 245, 249, 0.82);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 180ms ease;
+}
+
+.page-loader.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.page-loader__content {
+  width: min(100%, 260px);
+  padding: 28px 24px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.18);
+  text-align: center;
+}
+
+.page-loader__content .spinner-border {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+
+.loader-message {
+  margin-top: 14px;
+  color: #334155;
+  font-weight: 700;
+}
